@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
   <span>CRUD Operation</span>
   <span class="example-spacer"></span>
-  <button mat-raised-button (click)="openAddEditEmp('300ms', '300ms')" matTooltip="Add new employee">ADD
+  <button mat-raised-button (click)="openAddEditEmp('500ms', '300ms')" matTooltip="Add new employee">ADD
     EMPLOYEE</button>
 </mat-toolbar>
 
@@ -23,7 +23,7 @@
       <!-- firstName Column -->
       <ng-container matColumnDef="firstName">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> First Name </th>
-        <td mat-cell *matCellDef="let row"> {{row.firstName}}% </td>
+        <td mat-cell *matCellDef="let row"> {{row.firstName}} </td>
       </ng-container>
 
       <!-- lastName Column -->
@@ -79,7 +79,7 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
         <td mat-cell *matCellDef="let row">
           <p class="action-button-flex">
-            <button mat-icon-button color="primary" (click)="editEmployee(row)">
+            <button mat-icon-button color="primary" (click)="editEmployee(row,'500ms', '300ms')">
               <mat-icon>edit</mat-icon>
             </button>
             <button mat-icon-button color="warn" (click)="deleteEmployee(row.id, '3000ms', '1500ms')">

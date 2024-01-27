@@ -79,8 +79,12 @@ export class AppComponent implements OnInit {
     );
   }
 
-  editEmployee(data: any) {
-    const dialogRef = this.dialog.open(EmpAddEditComponent, { data });
+  editEmployee(data: any, enterAnimationDuration: string, exitAnimationDuration: string) {
+    const dialogRef = this.dialog.open(EmpAddEditComponent, {
+      data,
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
 
     dialogRef.afterClosed().subscribe((res) => {
       this.getEmployeeList();

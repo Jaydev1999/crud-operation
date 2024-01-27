@@ -29,7 +29,7 @@ export class EmployeeService {
   openSnackBar(message: any, action: any = 'ok') {
     this._snackBar.open(message, action, {
       duration: 1000,
-      verticalPosition: 'top'
+      verticalPosition: 'bottom'
     });
   }
 }
