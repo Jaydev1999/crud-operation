@@ -2,26 +2,38 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
-## Development server
+## Development Server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To run the development server, execute `ng serve` and navigate to `http://localhost:4200/`. The application will automatically reload if any source files are changed.
 
-## Code scaffolding
+## Code Scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can generate various components using Angular CLI. For example, to generate a new component, run `ng generate component component-name`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To build the project, execute `ng build`. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Running Unit Tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests using [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running End-to-End Tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To execute end-to-end tests, run `ng e2e`. Prior to using this command, ensure you've added a package that supports end-to-end testing.
 
-## Further help
+## Further Assistance
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For more information on Angular CLI commands, use `ng help` or visit the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+---
+
+### Additional Setup
+
+Before running this project, follow these additional steps:
+
+1. **Install Angular Material**: Angular Material provides pre-designed UI components for Angular applications. Install it by running `ng add @angular/material` and follow the instructions.
+
+2. **Setup JSON Server**: JSON Server is a tool for creating mock REST APIs. Install it globally using npm: `npm install -g json-server`. Then, start the server and watch changes to `db.json` by running `json-server --watch db.json`.
+
+By following these steps, you'll have Angular Material installed and JSON Server set up to provide mock API endpoints for your Angular application.
